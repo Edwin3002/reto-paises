@@ -1,7 +1,12 @@
 body{
-    background-color: rgb(255, 255, 255);
+    background-color:var(--color1);
     margin: 0;
     padding: 0;
+}
+
+:root{
+    --color1:rgb(228, 228, 228);
+    --color2:white;
 }
 .form-select{
     margin: 0 20px;
@@ -28,6 +33,7 @@ body{
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
+    background-color:var(--color1) ;
 }
 
 .card img{
@@ -105,4 +111,8 @@ button{
     margin-top: 15px;
     z-index: 1;
     color: #4f5b66;
+  }
+
+  navbar{
+      background-color: var(--color2);
   }
