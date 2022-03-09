@@ -6,7 +6,6 @@ export const showData = async(list,element) => {
         element.innerHTML += `
       <div class="card bg-dark text-light" style="width: 18rem;">
         <img src="${flags.png}" class="card-img-top" alt="...">
-<<<<<<< HEAD
         <div class ="l">
           <p class = "pais">${name.common}</p>
           <div class = "informacion">
@@ -15,14 +14,6 @@ export const showData = async(list,element) => {
           <p><strong>Capital: </strong>${capital}</p>
           <p><strong>Codigo: </strong>${cca3}</p>
           </div>
-=======
-        <div class="card-body">
-          <h3>${name.common}</h3>
-          <p class="card-text">Población: ${population}</p>
-          <p>Continente: ${region}</p>
-          <p>Capital: ${capital}</p>
-          <p>Codigo: ${cca3}</p>
->>>>>>> fa258e35801fbffdb6b19872d2925d188780249a
         </div>
       </div>
       `
