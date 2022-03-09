@@ -11,33 +11,27 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1 titulo">Where in the world?</span>
+     <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="navColor"> <!--  color del navbar -->
+        <div class="container-fluid ">
+          <span class="navbar-brand mb-0 h1 titulo text-light">Where in the world?</span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link active text-light" aria-current="page" href="#"></a>
               </li>
             </ul>
             <form class="d-flex">
-              <select class="form-select" aria-label="Default select example">
+              <select onchange="getRegion" class="form-select" aria-label="Default select example">
                 <option selected disabled>Escoge la region</option>
                 <option value="0">Todos</option>
-                <option value="1">Africa</option>
-                <option value="2">America</option>
-                <option value="3">Asia</option>
-                <option value="3">Europa</option>
-                <option value="3">Oceania</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europa</option>
+                <option value="Oceanie">Oceania</option>
               </select>
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
@@ -47,33 +41,7 @@
       </nav>
 
       <div id="cartas">
-        <div class="card" style="width: 18rem;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/200px-Flag_of_Colombia.svg.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3>Colombia</h3>
-            <p class="card-text">Population: </p>
-            <p>Region: </p>
-            <p>Capital: Bogota, D.C</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/200px-Flag_of_Colombia.svg.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3>Colombia</h3>
-            <p class="card-text">Population: </p>
-            <p>Region: </p>
-            <p>Capital: Bogota, D.C</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/200px-Flag_of_Colombia.svg.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3>Colombia</h3>
-            <p class="card-text">Population: </p>
-            <p>Region: </p>
-            <p>Capital: Bogota, D.C</p>
-          </div>
-        </div>
+        
       
     </div>
       
