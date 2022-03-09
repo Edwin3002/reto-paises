@@ -1,27 +1,17 @@
 body{
-    background-color: #eee;
+    background-color: black;
     margin: 0;
     padding: 0;
 }
-
-/* footer */
-hr{
-    width: 90%;
-    margin: 50px auto;
+.form-select{
+    margin: 0 20px;
 }
-.contact{
+
+#cartas{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 10px;
+    justify-content: space-evenly;
 }
-.contact ul{
-    list-style: none;
-}
-
-.derechos{
-    text-align: center;
-}
-.contact ul li a:hover{
-    background-color: rgb(209, 209, 209);
+.card{
+    margin: 20px 40px;
 }
