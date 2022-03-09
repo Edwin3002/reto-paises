@@ -1,7 +1,13 @@
 body{
-    background-color: #eee;
+    background-color:var(--color2);
     margin: 0;
     padding: 0;
+    color: white;
+}
+
+:root{
+    --color1:rgb(38, 48, 65) ;
+    --color2:rgb(23, 29, 39);
 }
 
 /* footer */
@@ -31,6 +37,8 @@ hr{
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
+    border: transparent;
+    background-color:var(--color1) ;
 }
 
 #cartas{
@@ -70,4 +78,9 @@ hr{
 button{
     border: 0px solid transparent;
     border-color: transparent;
+}
+
+.navbar{
+    background-color: var(--color1);
+    display: flex;
 }
