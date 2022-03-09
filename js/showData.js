@@ -2,25 +2,19 @@ export const showData = async(list,element) => {
     const products = await list;
     products.forEach(prod => {
         // const {name, alpha3code, capital, region, population, flags} = prod;
-        const {name, flags} = prod;
+        const {name, flags, region, cca3, population, capital} = prod;
         element.innerHTML += `
-        <div class="card" style="width: 18rem;">
-        <div class="card-body" >
-        <img src=${flags.png} class="card-img-top" alt="...">
-          <h5 class="card-title">${name.common}</h5>
+      <div class="card" style="width: 18rem;">
+        <img src="${flags.png}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>${name.common}</h3>
+          <p class="card-text">${population}</p>
+          <p>${region}</p>
+          <p>${capital}</p>
+          <p>${cca3}</p>
         </div>
       </div>
       `
     })
 }
-//    <div class="card" style="width: 18rem;">
-// <div class="mosaico">
-
-// <img src="${cover}" class="card-img-top" alt="...">
-// </div>
-// <div class="card-body">
-// <h5 class="card-title">${name}</h5>
-// <h6 class="card-title"><span class="platform">${platform} -</span> ${genre} </h6>
-// <p class="card-text fw-bold fs-3">${price}$<button class="btn btn-dark float-end" type="button" id="agregar">Comprar</button></p>
-// </div>
-// </div>
+{/*  */}
