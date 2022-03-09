@@ -30,6 +30,10 @@ body{
     display: flex;
 }
 
+.card img{
+    height: 170px;
+}
+
 #cartas{
     display: flex;
     flex-direction: row;
@@ -61,10 +65,44 @@ body{
     margin-left: 12px;
 }
 .tamanio{
-    width: 13px;
+    width: 100px;
 }
 
 button{
     border: 0px solid transparent;
     border-color: transparent;
 }
+
+.contenedor-busqueda{
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.contenedor-busqueda input#search{
+    width: 300px;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.contenedor-busqueda input#search::-moz-placeholder {  /* Firefox 19+ */
+    color: #65737e;  
+ }
+
+ .contenedor-busqueda .icon{
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 15px;
+    z-index: 1;
+    color: #4f5b66;
+  }
