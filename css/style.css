@@ -25,3 +25,22 @@ hr{
 .contact ul li a:hover{
     background-color: rgb(209, 209, 209);
 }
+
+.card{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+}
+
+#cartas{
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.titulo{
+    padding-left: 100px;
+}
