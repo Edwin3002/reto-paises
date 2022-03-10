@@ -6,6 +6,10 @@ body{
     padding: 0;
 }
 
+:root{
+    --color1:rgb(228, 228, 228);
+    --color2:white;
+}
 .form-select{
     margin: 0 20px;
 }
@@ -34,19 +38,21 @@ body{
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
+    background-color:var(--color1) ;
+}
+
+.card img{
+    height: 170px;
 }
 
 #cartas{
     display: flex;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around center;
 }
 
 .titulo{
     padding-left: 100px;
 }
-strong{
-    padding-left: 10px;
-}
+

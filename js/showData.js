@@ -7,12 +7,14 @@ export const showData = async(list,element) => {
         element.innerHTML += `
       <div class="card bg-dark text-light" style="width: 18rem;">
         <img src="${flags.png}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3>${name.common}</h3>
-          <p class="card-text">Población: ${population}</p>
-          <p>Continente: ${region}</p>
-          <p>Capital: ${capital}</p>
-          <p>Codigo: ${cca3}</p>
+        <div class ="l">
+          <p class = "pais">${name.common}</p>
+          <div class = "informacion">
+          <p><strong>Population: </strong>${population}</p>
+          <p><strong>Region: </strong>${region}</p>
+          <p><strong>Capital: </strong>${capital}</p>
+          <p><strong>Codigo: </strong>${cca3}</p>
+          </div>
         </div>
       </div>
       `
