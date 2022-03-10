@@ -47,3 +47,6 @@ body{
 .titulo{
     padding-left: 100px;
 }
+strong{
+    padding-left: 10px;
+}

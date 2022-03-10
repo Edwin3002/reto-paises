@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- navbar -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="navColor"> <!--  color del navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navColor"> <!--  color del navbar -->
         <div class="container-fluid ">
           <span class="navbar-brand mb-0 h1 titulo text-light">Where in the world?</span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,17 +23,17 @@
                 <a class="nav-link active text-light" aria-current="page" href="#"></a>
               </li>
             </ul>
-            <form class="d-flex">
-              <select onchange="getRegion" class="form-select" aria-label="Default select example">
+            <form class="d-flex" id="form">
+              <select id="region" class="form-select" aria-label="Default select example">
                 <option selected disabled>Escoge la region</option>
-                <option value="0">Todos</option>
-                <option value="Africa">Africa</option>
-                <option value="America">America</option>
-                <option value="Asia">Asia</option>
-                <option value="Europe">Europa</option>
-                <option value="Oceanie">Oceania</option>
+                <option value="All">Todos</option>
+                <option value="africa">Africa</option>
+                <option value="america">America</option>
+                <option value="asia">Asia</option>
+                <option value="europe">Europa</option>
+                <option value="oceania">Oceania</option>
               </select>
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>

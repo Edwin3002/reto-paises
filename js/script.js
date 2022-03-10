@@ -1,41 +1,45 @@
-import {getData, getRegion} from "./getData.js";
+import getData from "./getData.js"
+import getRegion from "./getRegion.js"
 import {showData} from './showData.js'
 
 const urlPaises = 'https://restcountries.com/v3.1/all';
-// https://restcountries.com/v3.1/region/europe
 const element = document.querySelector('#cartas');
 
+let paises
 document.addEventListener('DOMContentLoaded', async() => {
-    
     const data = await getData(urlPaises);
-    
+    paises = data
     console.log(data)
     showData(data,element);
-    color();
 
 })
 
-element.addEventListener('click', async(e) => {
 
-    const btnDetail = e.target.classList.contains('btn-outline-dark');
-    const id = e.target.id;
+//trae el valor del select
+const selectElement = document.querySelector('#region');
 
-    if(btnDetail){
-         const lista = await getData(urlPaises);
-         const objeto = lista.find(list => list.id === Number(id))
-         localStorage.setItem("Detail",JSON.stringify(objeto));
-         window.location.href = "detail.html"
-    }
+selectElement.addEventListener('change', async (event) => {
+    let continente = event.target.value
+    console.log(continente);
+    // if(continente!=='All'){
+    //     const filtro = await getRegion(region);
+    //     showData(filtro,element);
+    // } else {
+    //     const all = await getData(urlPaises);
+    //     showData(all,element);
+    // }
+});
+
+
+//funcion buscar y capturar el formulario
+const form1 = document.getElementById('form')
+//escucha los eventos
+form1.addEventListener('submit', (e) => {
+    e.preventDefault();
+    //apturo el valor o lo que escriben ene el input search
+    const search = document.getElementById('search').value;
+    //realizo la busqueda
+    const busqueda = paises.filter(pais => pais.name.common.toLocaleLowerCase().includes(search.toLocaleLowerCase()));
+    //llamo a la funcion a las tarjetas con el filtro
+    console.log(busqueda)
 })
-
-
-// const region = document.querySelector('#region');
-
-const getRegion = async() => {
-    const array = await getRegion();
-}
-//esta declarando dos veces get region
-function color(){
-    navColor = document.getElementById('navColor');
-    alert('hola cambie de color')
-}//me escucha?
