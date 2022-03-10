@@ -20,14 +20,15 @@ const selectElement = document.querySelector('#region');
 
 selectElement.addEventListener('change', async (event) => {
     let continente = event.target.value
-    console.log(continente);
-    // if(continente!=='All'){
-    //     const filtro = await getRegion(region);
-    //     showData(filtro,element);
-    // } else {
-    //     const all = await getData(urlPaises);
-    //     showData(all,element);
-    // }
+    // console.log(continente)
+    if(continente!=='All'){
+        const filtro = await getRegion(continente);
+        console.log(filtro)
+        showData(filtro,element);
+    } else {
+        const all = await getData(urlPaises);
+        showData(all,element);
+    }
 });
 
 
@@ -42,4 +43,5 @@ form1.addEventListener('submit', (e) => {
     const busqueda = paises.filter(pais => pais.name.common.toLocaleLowerCase().includes(search.toLocaleLowerCase()));
     //llamo a la funcion a las tarjetas con el filtro
     console.log(busqueda)
+    showData(busqueda,element);
 })

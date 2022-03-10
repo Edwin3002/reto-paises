@@ -1,5 +1,6 @@
 export const showData = async(list,element) => {
     const products = await list;
+    element.innerHTML = '';
     products.forEach(prod => {
         // const {name, alpha3code, capital, region, population, flags} = prod;
         const {name, flags, cca3, population, capital, region} = prod;
